@@ -85,38 +85,12 @@ export default defineConfig({
                 S.list()
                   .title('DBR Leads Dashboard')
                   .items([
-                    // Analytics Link
-                    S.listItem()
-                      .title('📊 View Analytics Dashboard')
-                      .icon(() => '📊')
-                      .child(
-                        S.component(() => (
-                          <div style={{ padding: '2rem', textAlign: 'center' }}>
-                            <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>DBR Analytics Dashboard</h2>
-                            <p style={{ marginBottom: '2rem', color: '#666' }}>
-                              View detailed analytics, metrics, and charts for your DBR campaigns
-                            </p>
-                            <a
-                              href="/dbr-analytics"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{
-                                display: 'inline-block',
-                                padding: '1rem 2rem',
-                                background: '#2563eb',
-                                color: 'white',
-                                borderRadius: '0.5rem',
-                                textDecoration: 'none',
-                                fontWeight: '600',
-                              }}
-                            >
-                              Open Analytics Dashboard →
-                            </a>
-                          </div>
-                        )).title('Analytics Dashboard')
-                      ),
+                    // Analytics Link - Commented out JSX to fix build
+                    // S.listItem()
+                    //   .title('📊 View Analytics Dashboard')
+                    //   .icon(() => '📊'),
 
-                    S.divider(),
+                    // S.divider(),
 
                     // Hot Leads
                     S.listItem()
